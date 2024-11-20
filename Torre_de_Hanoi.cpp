@@ -14,6 +14,11 @@ int main() {
 
     int option, tamanho, jogadasMax;
 
+    printf("Bem vindo(a) ao desafio das torres de Hanoi!!\n");
+    printf("O objetivo é transpor os pinos da torre A para uma segunda torre, usando a terceira como auxiliar.\n");
+    printf("A única regra é que pinos maiores não podem sobrepor pinos menores.\n");
+    printf("Nesse desafio você terá um número máximo de jogadas!\n");
+    printf("As jogadas são acionadas após você indicar uma torre de partida e outra de destino, mas primeiro:\n");
     printf("Defina o nível da sua Torre de Hanoi:\n");
     printf("1. Fácil - 3 pinos\n");
     printf("2. Médio - 4 pinos\n");
@@ -46,7 +51,7 @@ int main() {
     }
 
     // Calcula o número máximo de jogadas permitidas: (2^n) - 1
-    jogadasMax = (int)pow(2, tamanho) - 1;
+    jogadasMax = (int)pow(3, tamanho) - 1;
     jogo(tamanho, jogadasMax);
 
     return 0;
